@@ -101,3 +101,16 @@
 }
 @media(max-height:620px){.team-grid .paloma-bio{font-size:10px}.detail-title{font-size:28px}.detail-description,.detail-credit{margin-top:12px}.detail-copy .project-tags{margin-bottom:10px}.back-link{margin-bottom:12px}}
 @media(max-height:620px) and (max-width:760px){.brand{top:50px;bottom:22px;max-width:88px}.team-grid .bio,.team-grid .role{max-width:32ch}.team-grid .paloma-bio{font-size:8px}.detail-layout{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.project-card,.project-card:nth-child(2),.project-card:nth-child(3){grid-template-rows:minmax(0,1fr) 78px}.caption h2{font-size:16px}.caption{gap:5px}.project-tags span{font-size:8px}.project-panel{grid-template-rows:36px minmax(0,1fr) 10px}}
+
+/* Restore original project colours on interaction. */
+.project-art img,.project-art video{transition:filter .4s ease,transform .7s ease}
+.project-card:focus-visible .project-art img,.project-card:focus-visible .project-art video{filter:grayscale(0)}
+@media(hover:hover){
+ .project-card:hover .project-art img,.project-card:hover .project-art video,
+ .detail-layout .project-art:hover img,.detail-layout .project-art:hover video{filter:grayscale(0)}
+}
+.caption .caption-company{font:10px Arial,Helvetica,sans-serif;color:#bbb;margin:0;line-height:1.2}
+.project-card,.project-card:nth-child(2),.project-card:nth-child(3){grid-template-rows:minmax(0,1fr) 112px}
+.caption{gap:6px}
+@media(max-width:760px){.project-card,.project-card:nth-child(2),.project-card:nth-child(3){grid-template-rows:minmax(0,1fr) 116px}.caption .caption-company{font-size:9px}}
+@media(max-height:620px) and (max-width:760px){.project-card,.project-card:nth-child(2),.project-card:nth-child(3){grid-template-rows:minmax(0,1fr) 94px}.caption{gap:4px}}

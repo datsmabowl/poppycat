@@ -152,6 +152,24 @@ window.POPPYCAT_PROJECTS = [
     "source": "https://www.palomaamaya.com/acting/"
   },
   {
+    "id": "no-other-mans-land",
+    "title": "No Other Man’s Land",
+    "year": null,
+    "tags": [
+      "Theatre"
+    ],
+    "person": "Dale Reynolds",
+    "role": "Playwright",
+    "company": "Good Tempest Productions · White Bear Theatre",
+    "description": "A family war story about a Korean War veteran, the relatives who want him to talk, and the men in a cemetery who draw out what he has kept to himself. A semi-surreal drama mixing military humour, memory and the bonds between veterans.",
+    "image": "assets/projects/no-other-mans-land.jpg",
+    "video": null,
+    "url": null,
+    "credits": "Director: Lata Nobes · Stage art: Dan Llywelyn Hall",
+    "fit": "contain",
+    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family"
+  },
+  {
     "id": "single-cell",
     "title": "Single Cell",
     "year": "2020",
@@ -180,8 +198,8 @@ window.POPPYCAT_PROJECTS = [
     ],
     "person": "Ben Dresner-Reynolds",
     "role": "Interaction, sound composition and film",
-    "company": "Red Bull Music · Typething",
-    "description": "A spatial installation of sound, light and smoke, activated by touch. Ben contributed capacitive interaction, a generative sound template, composition, filming and editing.",
+    "company": "Red Bull Music",
+    "description": "An installation of sound, light and smoke for Red Bull Music, created with Typething and activated by touch. Ben contributed capacitive interaction, a generative sound template, composition, filming and editing.",
     "image": "assets/projects/misty-tropics.jpg",
     "video": "https://benjamindresner.com/video/preview/misty-tropics.mp4",
     "url": null,
@@ -198,14 +216,32 @@ window.POPPYCAT_PROJECTS = [
     ],
     "person": "Ben Dresner-Reynolds",
     "role": "Photography and visual development",
-    "company": "Decca Records / Universal",
-    "description": "A commissioned music video combining photography with TouchDesigner visuals.",
+    "company": "Universal",
+    "description": "A music video commissioned by Decca Records / Universal, combining photography with TouchDesigner visuals.",
     "image": "assets/projects/hw.jpg",
     "video": "https://benjamindresner.com/video/preview/hw.mp4",
     "url": null,
     "credits": null,
     "fit": "contain",
     "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+  },
+  {
+    "id": "small-talk",
+    "title": "Small Talk",
+    "year": "2000",
+    "tags": [
+      "Theatre"
+    ],
+    "person": "Dale Reynolds",
+    "role": "Playwright",
+    "company": "Brockley Theatre, London",
+    "description": "A one-act black farce set in a London pub on a rainy afternoon. When the customers start talking, questions of love, power, money and disappointment surface. First performed at the Brockley Theatre in February–March 2000.",
+    "image": "assets/projects/small-talk.jpg",
+    "video": null,
+    "url": null,
+    "credits": "Director: Mike Burnside · Set design: Davey Moore",
+    "fit": "contain",
+    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family"
   },
   {
     "id": "macbeth",
@@ -244,5 +280,23 @@ window.POPPYCAT_PROJECTS = [
     "credits": "Director: Philipp M. Krenn",
     "fit": "cover",
     "source": "https://www.palomaamaya.com/acting/"
+  },
+  {
+    "id": "sailors-dream",
+    "title": "Sailors’ Dream",
+    "year": null,
+    "tags": [
+      "Theatre"
+    ],
+    "person": "Dale Reynolds",
+    "role": "Playwright",
+    "company": "Reality Sandwich Theatre Co",
+    "description": "A play by Dale Reynolds, presented by Reality Sandwich Theatre Co at the Prince of Wales Pub Theatre in Earl’s Court, London.",
+    "image": "assets/projects/sailors-dream.jpg",
+    "video": null,
+    "url": null,
+    "credits": "Original production poster from Dale Reynolds’ archive",
+    "fit": "contain",
+    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family"
   }
 ];

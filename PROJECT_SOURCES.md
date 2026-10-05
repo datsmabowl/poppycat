@@ -13,6 +13,12 @@ Project content is in `projects-data.js`. The order is curated: recent headline 
 
 Each project identifies the team member and their contribution; these are individual credits and collaborations, not PoppyCat productions. Unconfirmed years remain null and are not displayed. Do not infer a date from the order of Paloma's website.
 
-## Pending material
+## Dale Reynolds’ plays
 
-Dale's requested local `Dale Plays` folder was not available in this workspace. No titles, dates or production claims have been invented. Add his projects once the folder or ZIP is supplied.
+Added from `Dale Plays.zip`, supplied on 5 October 2026. The published images are the three original production posters. Private contact details on the back of the Small Talk leaflet are not reproduced.
+
+- **No Other Man’s Land:** poster and synopsis leaflet. Good Tempest Productions; White Bear Theatre; director Lata Nobes; stage art Dan Llywelyn Hall. No year printed; left unpublished.
+- **Small Talk:** front and reverse programme/leaflet. First performed at the Brockley Theatre, London, February–March 2000; director Mike Burnside; set design Davey Moore.
+- **Sailors’ Dream:** original Reality Sandwich Theatre Co poster for the Prince of Wales Pub Theatre, Earl’s Court. No year or plot synopsis supplied, so the description uses only the production details.
+
+Misty Tropics is credited to Red Bull Music; Holy Waters to Universal, with Decca Records retained in the description. Company/client credits also appear in the gallery.
