@@ -49,3 +49,55 @@
 }
 @media(max-height:620px){.team-grid img{height:65px;width:55px}}
 @media(max-height:620px) and (max-width:760px){.brand{max-width:110px}.heading-row h1{font-size:28px}.team-grid{grid-template-columns:1fr;gap:12px}.team-grid article{display:grid;grid-template-columns:40px 1fr;gap:12px}.team-grid img{height:45px;width:40px;margin:0}.team-grid h2{font-size:12px}.team-grid .role{margin:2px 0 4px}}
+
+/* Give the artwork a generous cream border on every side. */
+.brand{top:clamp(25px,3.6dvh,42px);bottom:clamp(25px,3.6dvh,42px);width:calc(33dvh - clamp(50px,7.2dvh,84px));right:clamp(32px,5vw,80px)}
+.team-grid .bio,.team-grid .role{max-width:25ch;white-space:normal}
+.team-grid .paloma-bio{font-size:12px}
+.team-grid h2{white-space:nowrap}
+/* One continuous collection: every medium gets the same card treatment. */
+.gallery{gap:16px}
+.project-card,.project-card:nth-child(2),.project-card:nth-child(3){flex:0 0 clamp(310px,46vw,720px);grid-template-rows:minmax(0,1fr) 96px;color:inherit}
+.project-card .project-art{background:#151515}
+.project-art img,.project-art video{width:100%;height:100%;object-fit:cover;filter:grayscale(1);position:absolute;inset:0}
+.project-art video{pointer-events:none}
+.project-card .project-art img{transition:transform .7s ease}
+.project-card:hover .project-art img{transform:scale(1.025)}
+.caption{display:flex;align-items:stretch;justify-content:center;flex-direction:column;gap:8px;padding:10px 0}
+.caption-title{display:flex;justify-content:space-between;align-items:baseline;gap:15px}
+.caption h2{font-size:clamp(17px,1.65vw,25px);line-height:1.08;letter-spacing:-.5px}
+.project-arrow{font-size:18px}
+.project-tags{display:flex;flex-wrap:wrap;gap:5px 7px;align-items:center}
+.project-tags span{font:9px Arial,Helvetica,sans-serif;border:1px solid #4a4a46;border-radius:2px;padding:3px 6px;line-height:1;color:#c8c5bc}
+.project-tags .project-year{margin-left:auto;border:0;padding-right:0;color:#aaa}
+.caption .project-credit{font:10px Arial,Helvetica,sans-serif;line-height:1.3;color:#aaa}
+.project-card:focus-visible{outline-offset:-2px}
+.detail-panel{padding:clamp(16px,3dvh,36px) clamp(20px,3vw,56px);overflow:hidden}
+.detail-layout{height:100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,64px)}
+.detail-layout .project-art{min-height:0}
+.detail-layout .project-art img,.detail-layout .project-art video{object-fit:contain}
+.detail-copy{align-self:center;max-height:100%;overflow:auto;scrollbar-width:none;padding:2px 3px 8px;max-width:460px}
+.detail-copy::-webkit-scrollbar{display:none}
+.back-link{display:inline-block;font-size:11px;color:#bbb;margin-bottom:clamp(16px,3dvh,30px)}
+.detail-copy .project-tags{margin-bottom:16px}
+.detail-copy .project-year{margin-left:4px}
+.detail-title{font-size:clamp(25px,3.2vw,48px);font-weight:400;letter-spacing:-.055em;line-height:1.02}
+.detail-company{font-size:12px;color:#bcbab2;margin-top:9px}
+.detail-description{font-size:clamp(12px,1vw,14px);line-height:1.55;max-width:43ch;margin-top:22px}
+.detail-credit{font-size:11px;line-height:1.5;margin-top:22px;color:#bbb}
+.detail-credit strong{display:block;font-weight:400;color:#f0ede4;margin-bottom:2px}
+.detail-other-credits{font-size:10px;line-height:1.5;color:#888;margin-top:12px;max-width:48ch}
+.source-link{font-size:11px;display:inline-block;border-bottom:1px solid #777;padding-bottom:4px;margin-top:20px}
+@media(max-width:760px){
+ .brand{top:60px;bottom:24px;right:25px;width:31vw;max-width:calc(33dvh - 84px)}
+ .team-grid .bio,.team-grid .role{max-width:28ch}
+ .team-grid .paloma-bio{font-size:10px}
+ .project-card,.project-card:nth-child(2),.project-card:nth-child(3){flex-basis:82vw;grid-template-rows:minmax(0,1fr) 102px}
+ .caption{gap:7px}.caption h2{font-size:20px}.caption .project-credit{font-size:9px;margin:0}.gallery-toolbar>p{font-size:8px}
+ .detail-layout{grid-template-columns:1fr;grid-template-rows:minmax(90px,19dvh) minmax(0,1fr);gap:16px}
+ .detail-copy{align-self:start;max-width:100%;width:100%}.detail-title{font-size:25px}.back-link{margin-bottom:12px}
+ .detail-copy .project-tags{margin-bottom:10px}.detail-description{margin-top:13px;font-size:12px}.detail-credit{margin-top:12px}
+ .detail-other-credits{margin-top:8px}.source-link{margin-top:12px}
+}
+@media(max-height:620px){.team-grid .paloma-bio{font-size:10px}.detail-title{font-size:28px}.detail-description,.detail-credit{margin-top:12px}.detail-copy .project-tags{margin-bottom:10px}.back-link{margin-bottom:12px}}
+@media(max-height:620px) and (max-width:760px){.brand{top:50px;bottom:22px;max-width:88px}.team-grid .bio,.team-grid .role{max-width:32ch}.team-grid .paloma-bio{font-size:8px}.detail-layout{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.project-card,.project-card:nth-child(2),.project-card:nth-child(3){grid-template-rows:minmax(0,1fr) 78px}.caption h2{font-size:16px}.caption{gap:5px}.project-tags span{font-size:8px}.project-panel{grid-template-rows:36px minmax(0,1fr) 10px}}
