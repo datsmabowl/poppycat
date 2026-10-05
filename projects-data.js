@@ -1,5 +1,4 @@
-// Curated order: recent headline credits first, then selected work.
-// Null years are intentionally unpublished until confirmed.
+// Curated order within each medium; unconfirmed years remain unpublished.
 window.POPPYCAT_PROJECTS = [
   {
     "id": "molly-vs-the-machines",
@@ -18,7 +17,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://www.cosmiccatfilms.com/molly-vs-the-machines",
     "credits": "Director: Marc Silver",
     "fit": "cover",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 1.777778,
+    "section": "film-tv"
   },
   {
     "id": "all-new-people",
@@ -36,7 +37,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://eth-hamburg.de/2025/08/04/people/",
     "credits": "Writer: Zach Braff · Director: Paul Glaser · Photography: Stefan Kock",
     "fit": "cover",
-    "source": "https://www.palomaamaya.com/acting/"
+    "source": "https://www.palomaamaya.com/acting/",
+    "aspectRatio": 1.501466,
+    "section": "theatre"
   },
   {
     "id": "lenovo",
@@ -55,7 +58,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": null,
     "fit": "contain",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 0.5625,
+    "section": "interactive"
   },
   {
     "id": "alice-by-heart",
@@ -74,7 +79,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://www.palomaamaya.com/acting/",
     "credits": null,
     "fit": "cover",
-    "source": "https://www.palomaamaya.com/acting/"
+    "source": "https://www.palomaamaya.com/acting/",
+    "aspectRatio": 1.5,
+    "section": "theatre"
   },
   {
     "id": "grimm-tales",
@@ -93,7 +100,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://www.palomaamaya.com/acting/",
     "credits": "Directors: Niall Bailey and Rachael Kerridge",
     "fit": "cover",
-    "source": "https://www.palomaamaya.com/acting/"
+    "source": "https://www.palomaamaya.com/acting/",
+    "aspectRatio": 1.6,
+    "section": "theatre"
   },
   {
     "id": "chivas-regal",
@@ -112,7 +121,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": null,
     "fit": "contain",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 0.5625,
+    "section": "film-tv"
   },
   {
     "id": "exquisite-human",
@@ -131,7 +142,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": null,
     "fit": "cover",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 1.777778,
+    "section": "interactive"
   },
   {
     "id": "maria-my-love",
@@ -149,7 +162,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://www.palomaamaya.com/acting/",
     "credits": "Director: Gustavo Abasolo",
     "fit": "contain",
-    "source": "https://www.palomaamaya.com/acting/"
+    "source": "https://www.palomaamaya.com/acting/",
+    "aspectRatio": 0.751111,
+    "section": "film-tv"
   },
   {
     "id": "no-other-mans-land",
@@ -167,7 +182,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": "Director: Lata Nobes · Stage art: Dan Llywelyn Hall",
     "fit": "contain",
-    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family"
+    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family",
+    "aspectRatio": 1.428571,
+    "section": "theatre"
   },
   {
     "id": "single-cell",
@@ -186,7 +203,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": null,
     "fit": "cover",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 1.777778,
+    "section": "interactive"
   },
   {
     "id": "misty-tropics",
@@ -205,7 +224,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": "Created with Typething and collaborating musicians · Lighting: Louis Shambles",
     "fit": "cover",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 1.777778,
+    "section": "interactive"
   },
   {
     "id": "holy-waters",
@@ -223,7 +244,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": null,
     "fit": "contain",
-    "source": "https://github.com/datsmabowl/website/blob/main/script.js"
+    "source": "https://github.com/datsmabowl/website/blob/main/script.js",
+    "aspectRatio": 1.0,
+    "section": "film-tv"
   },
   {
     "id": "small-talk",
@@ -241,7 +264,9 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": "Director: Mike Burnside · Set design: Davey Moore",
     "fit": "contain",
-    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family"
+    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family",
+    "aspectRatio": 1.131687,
+    "section": "theatre"
   },
   {
     "id": "macbeth",
@@ -260,7 +285,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://www.palomaamaya.com/acting/",
     "credits": "Director: Antú Romero Nunes",
     "fit": "cover",
-    "source": "https://www.palomaamaya.com/acting/"
+    "source": "https://www.palomaamaya.com/acting/",
+    "aspectRatio": 1.666667,
+    "section": "theatre"
   },
   {
     "id": "pinocchio",
@@ -279,7 +306,9 @@ window.POPPYCAT_PROJECTS = [
     "url": "https://www.palomaamaya.com/acting/",
     "credits": "Director: Philipp M. Krenn",
     "fit": "cover",
-    "source": "https://www.palomaamaya.com/acting/"
+    "source": "https://www.palomaamaya.com/acting/",
+    "aspectRatio": 1.668985,
+    "section": "theatre"
   },
   {
     "id": "sailors-dream",
@@ -297,6 +326,8 @@ window.POPPYCAT_PROJECTS = [
     "url": null,
     "credits": "Original production poster from Dale Reynolds’ archive",
     "fit": "contain",
-    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family"
+    "source": "Dale Plays.zip — original posters and production leaflets supplied by the author’s family",
+    "aspectRatio": 0.735,
+    "section": "theatre"
   }
 ];

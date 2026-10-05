@@ -1,6 +1,6 @@
 # Selected work
 
-Project content is in `projects-data.js`. The order is curated: recent headline credits first, then a mix of selected stage, screen and audience-participation work. Medium is a tag, not a separate section. Add projects to the data array to extend the gallery and its in-page detail views.
+Project content is in `projects-data.js`. The order is curated: recent headline credits first, then a mix of selected stage, screen and audience-participation work. Projects are grouped into equal Theatre, Film & TV, and Interactive sections; the curated order is retained within each. Each entry includes its section and measured media aspect ratio. Card widths follow the media proportions. Add projects to the data array to extend the gallery and its in-page detail views.
 
 ## Sources checked 5 October 2026
 
