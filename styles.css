@@ -22,3 +22,30 @@
  .contact-link{font-size:11px}
 }
 @media(max-height:620px) and (max-width:760px){.brand{max-width:110px;top:45px;width:110px}.heading-row h1{font-size:30px}}
+
+/* Right-aligned artwork, left-aligned navigation and introduction. */
+.brand{left:auto;right:clamp(20px,3vw,56px);transform:none}
+.topline{justify-content:flex-start}
+.topline nav{align-items:center}
+.contact-link span{margin-left:8px}
+.heading-row{flex-direction:column;align-items:flex-start;gap:14px;width:calc(100% - 33dvh - 30px)}
+.heading-row h1{white-space:normal;max-width:900px;font-size:clamp(32px,4.8vw,76px);line-height:.96}
+.heading-note{max-width:100%}
+.team-grid h2{white-space:nowrap;font-size:clamp(12px,1.25vw,18px);line-height:1.2;letter-spacing:-.35px}
+.team-grid img{object-fit:contain;object-position:left bottom;width:clamp(65px,10vw,125px);height:clamp(70px,17dvh,165px)}
+.partners{max-width:1060px}
+@media(max-width:760px){
+ .brand{right:15px;max-width:calc(33dvh - 60px)}
+ .heading-row{width:62%;gap:10px}
+ .heading-row h1{font-size:clamp(24px,6.2vw,42px)}
+ .heading-note{font-size:9px}
+ .topline nav{gap:17px}
+ .team-grid h2{font-size:clamp(12px,3.6vw,15px)}
+ .team-grid img{width:60px;height:90px}
+ .team-grid article{grid-template-columns:60px minmax(0,1fr)}
+ .partners{gap:10px}
+ .partners img{width:10%;min-width:0}
+ .partners .solid-logo{width:19%}
+}
+@media(max-height:620px){.team-grid img{height:65px;width:55px}}
+@media(max-height:620px) and (max-width:760px){.brand{max-width:110px}.heading-row h1{font-size:28px}.team-grid{grid-template-columns:1fr;gap:12px}.team-grid article{display:grid;grid-template-columns:40px 1fr;gap:12px}.team-grid img{height:45px;width:40px;margin:0}.team-grid h2{font-size:12px}.team-grid .role{margin:2px 0 4px}}
