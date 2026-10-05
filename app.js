@@ -1,13 +1,13 @@
 (() => {
 const panels=[...document.querySelectorAll('.panel')],links=[...document.querySelectorAll('nav a, .contact-link')],main=document.querySelector('main');
-const titles={projects:'Selected work',about:'About',team:'Our team',contact:'Contact'};
-const descriptions={projects:'Work by our team before PoppyCat Productions.',about:'PoppyCat Productions',team:'Dale Reynolds · Paloma Amaya · Benjamin Dresner-Reynolds',contact:'Contact details coming soon.'};
+const titles={projects:'Selected work',about:'About',team:'We are...',contact:'Contact'};
+const descriptions={projects:'Work by our team.',about:'PoppyCat Productions',team:'Dale Reynolds · Paloma Amaya · Benjamin Dresner-Reynolds',contact:'Contact details coming soon.'};
 const gallery=document.querySelector('.gallery'),previous=document.querySelector('#previous'),next=document.querySelector('#next'),progress=document.querySelector('#progress');
 const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
 function syncGallery(){const max=gallery.scrollWidth-gallery.clientWidth;previous.disabled=gallery.scrollLeft<=1;next.disabled=gallery.scrollLeft>=max-1;const fraction=Math.min(1,gallery.clientWidth/Math.max(1,gallery.scrollWidth));progress.style.width=(fraction*100)+'%';progress.style.transform='translateX('+(max>0?gallery.scrollLeft/max*(1-fraction)/fraction*100:0)+'%)';}
 function move(direction){gallery.scrollBy({left:direction*(gallery.clientWidth*.75),behavior:reduced()?'instant':'smooth'});}
 previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
-gallery.addEventListener('wheel',event=>{if(event.ctrlKey)return;const raw=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;const delta=raw*(event.deltaMode===1?16:event.deltaMode===2?gallery.clientWidth:1);if(!delta||gallery.scrollWidth<=gallery.clientWidth)return;event.preventDefault();gallery.scrollLeft+=delta;},{passive:false});
+document.addEventListener('wheel',event=>{if(event.ctrlKey||document.querySelector('#projects').hidden)return;const raw=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;const delta=raw*(event.deltaMode===1?16:event.deltaMode===2?gallery.clientWidth:1);if(!delta||gallery.scrollWidth<=gallery.clientWidth)return;event.preventDefault();gallery.scrollLeft+=delta;},{passive:false});
 gallery.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();move(event.key==='ArrowRight'?1:-1);}else if(event.key==='Home'||event.key==='End'){event.preventDefault();gallery.scrollTo({left:event.key==='Home'?0:gallery.scrollWidth,behavior:reduced()?'instant':'smooth'});}});
 gallery.addEventListener('scroll',syncGallery,{passive:true});
 function fitInfo(){const panel=panels.find(p=>!p.hidden);if(!panel||panel.id==='projects')return;const content=panel.firstElementChild;content.style.transform='';content.style.transformOrigin='top left';const style=getComputedStyle(panel),w=panel.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),h=panel.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);const scale=Math.min(1,w/Math.max(1,content.scrollWidth),h/Math.max(1,content.scrollHeight));if(scale<1)content.style.transform='scale('+scale+')';}
